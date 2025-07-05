@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@theme {
+  --animate-navbar-transform-open: navbar-transform-open 0.5s forwards;
+  @keyframes navbar-transform-open {
+    0% {
+      transform: translateX(-100%);
+      display: hidden;
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  --animate-navbar-transform-close: navbar-transform-close 0.5s forwards;
+  @keyframes navbar-transform-close {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+      display: hidden;
+    }
+  }
+  --animate-navbar-blur-open: navbar-blur-open 0.5s forwards;
+  @keyframes navbar-blur-open {
+    0% {
+      backdrop-filter: none;
+    }
+    100% {
+      backdrop-filter: blur(16px);
+    }
+  }
+  --animate-navbar-blur-close: navbar-blur-close 0.5s forwards;
+  @keyframes navbar-blur-close {
+    0% {
+      backdrop-filter: blur(16px);
+    }
+    100% {
+      backdrop-filter: none;
+    }
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+}
