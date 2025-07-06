@@ -38,6 +38,15 @@
       backdrop-filter: none;
     }
   }
+  --animate-team-cards-open: team-cards-open 0.5s forwards;
+  @keyframes team-cards-open {
+    0% {
+      display: hidden;
+    }
+    100% {
+      display: block;
+    }
+  }
 }
 
 ::view-transition-old(root),

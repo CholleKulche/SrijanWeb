@@ -43,8 +43,8 @@ export default function Navbar() {
     });
   }, []);
   return (
-    <nav className="font-semibold font-[Gill_Sans]">
-      <div className="shadow-md hidden md:block mx-auto max-w-[100%] px-8">
+    <nav>
+      <div className="font-semibold font-[Gill_Sans] shadow-md z-11 relative hidden md:block mx-auto max-w-[100%] px-8 bg-neutral-100">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center space-x-4">
             <div className="flex shrink-0">
