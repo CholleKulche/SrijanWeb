@@ -47,6 +47,9 @@
       display: block;
     }
   }
+  --breakpoint-card-1: 1178px;
+  --breakpoint-card-2: 900px;
+  --breakpoint-card-3: 640px;
 }
 
 ::view-transition-old(root),
