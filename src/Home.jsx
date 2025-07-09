@@ -12,9 +12,9 @@ const cardList = [
     content: "Sustainable gifting solutions for businesses",
   },
   {
-    img: "src/assets/Images/Plantable Wedding Invitations.png",
-    product: "Plantable Wedding Invitations",
-    content: "Create memories that blossom into flowers",
+    img: "src/assets/Images/PlantableJournal.png",
+    product: "Plantable Journals",
+    content: "Write memoirs that blossom into flowers",
   },
   {
     img: "src/assets/Images/Seed Paper Business Cards.png",
@@ -161,12 +161,71 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <div className="w-[100%] relative py-6 px-8 flex space-x-4 bg-linear-to-br from-green-200 from-[0%] via-emerald-100 via-[50%] to-teal-200 to-[100%] text-slate-600 shadow-lg z-1 font-[Gill_Sans] font-bold">
+          <div className="hidden sm:flex flex-col flex-1">
+            <h1 className="text-3xl md:text-5xl font-[Georgia] text-slate-700 font-semibold">
+              We at <div className="text-lime-600">Project Srijan</div> believe
+              in creating environmental impact one paper at a time
+            </h1>
+            <p className="pt-4 text-xs md:text-base font-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              impedit expedita, itaque nobis doloremque rerum tempora esse
+              aliquid magni ratione numquam. Pariatur a est mollitia nostrum.
+              Nihil facere earum dolore.
+            </p>
+          </div>
+          <div className="flex-col flex-1">
+            <h1 className="text-xl text-center sm:text-left sm:text-sm md:text-lg font-bold">
+              Our Impact
+            </h1>
+            <div className="pt-4 grid grid-cols-2 gap-2 sm:gap-4">
+              <div className="flex-col">
+                <h1 className="text-xl sm:text-3xl md:text-5xl font-light font-[Didot] text-emerald-700">
+                  100+
+                </h1>
+                <p className="text-xs md:text-base font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium ipsam illo aliquid molestiae qui,
+                </p>
+              </div>
+              <div className="flex-col">
+                <h1 className="text-xl sm:text-3xl md:text-5xl md:text-5xl font-light font-[Didot] text-emerald-700 ">
+                  5000+{" "}
+                </h1>
+                <p className="text-xs md:text-base font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div className="flex-col">
+                <h1 className="text-xl sm:text-3xl md:text-5xl font-light font-[Didot] text-emerald-700">
+                  1000+{" "}
+                </h1>
+                <p className="text-xs md:text-base font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium ipsam illo aliquid
+                </p>
+              </div>
+              <div className="flex-col">
+                <h1 className="text-xl sm:text-3xl md:text-5xl font-light font-[Didot] text-emerald-700">
+                  500+{" "}
+                </h1>
+                <p className="text-xs md:text-base font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium ipsam illo aliquid molestiae qui, officia illum
+                  eius nulla sapiente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="py-6 bg-white">
-          <div className="mx-auto w-[50%] flex-col align-center justify-center py-4 rounded-sm text-center">
+          <div className=" flex-col align-center justify-center py-4 rounded-sm text-center">
             <h1 className="font-bold text-xl sm:text-4xl pb-2 font-[Georgia]">
               How It Works
             </h1>
-            <hr className="bg-slate-800" />
+            <div className="px-30 sm:px-40 md:px-50">
+              <hr />
+            </div>
             <p className="text-slate-900 text-xs sm:text-base pt-4 font-[Georgia]">
               From paper to plant in four simple steps
             </p>

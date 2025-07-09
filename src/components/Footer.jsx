@@ -1,6 +1,9 @@
 export default function Footer() {
   return (
-    <div className="flex-col bg-emerald-800 space-y-16 items-center p-10 text-neutral-300 font-[Gill_Sans]">
+    <div
+      className="flex-col bg-emerald-800 space-y-16 items-center p-10 text-neutral-300 font-[Gill_Sans]"
+      id="Contact"
+    >
       <div className="flex">
         <div className="hidden md:block flex-1 text-lg md:text-4xl font-bold px-4">
           Creating sustainable solutions for a greener future.

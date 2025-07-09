@@ -24,6 +24,10 @@
   @keyframes navbar-blur-open {
     0% {
       backdrop-filter: none;
+      height: 0%;
+    }
+    0.1% {
+      height: 100%;
     }
     100% {
       backdrop-filter: blur(16px);
@@ -33,9 +37,14 @@
   @keyframes navbar-blur-close {
     0% {
       backdrop-filter: blur(16px);
+      height: 100%;
+    }
+    99.99% {
+      height: 100%;
     }
     100% {
       backdrop-filter: none;
+      height: 0%;
     }
   }
   --animate-team-cards-open: team-cards-open 0.5s forwards;

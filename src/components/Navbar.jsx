@@ -2,16 +2,35 @@ import { useEffect, useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 function NavButton({ name }) {
-  return (
-    <Link to={name == "Home" ? "/" : "/" + name} viewTransition>
-      <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
-        {name}
+  if (name != "Contact") {
+    return (
+      <Link to={name == "Home" ? "/" : "/" + name} viewTransition>
+        <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
+          {name}
+        </div>
+        <div className="block cursor:pointer md:hidden w-[100%] py-4 px-6 flex-1 text-slate-700 hover:bg-[#749615] hover:text-slate-100 transition ease-in-out duration-300">
+          {name}
+        </div>
+      </Link>
+    );
+  } else {
+    const scrollToFooter = () => {
+      const contact = document.getElementById("Contact");
+      if (contact) {
+        contact.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+    return (
+      <div onClick={scrollToFooter}>
+        <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
+          {name}
+        </div>
+        <div className="block cursor:pointer md:hidden w-[100%] py-4 px-6 flex-1 text-slate-700 hover:bg-[#749615] hover:text-slate-100 transition ease-in-out duration-300">
+          {name}
+        </div>
       </div>
-      <div className="block cursor:pointer md:hidden w-[100%] py-4 px-6 flex-1 text-slate-700 hover:bg-[#749615] hover:text-slate-100 transition ease-in-out duration-300">
-        {name}
-      </div>
-    </Link>
-  );
+    );
+  }
 }
 function BuyButton() {
   return (
@@ -44,7 +63,7 @@ export default function Navbar() {
   }, []);
   return (
     <nav>
-      <div className="font-semibold font-[Gill_Sans] shadow-md z-11 relative hidden md:block mx-auto max-w-[100%] px-8 bg-neutral-100">
+      <div className="font-bold font-[Gill_Sans] shadow-md z-11 relative hidden md:block mx-auto max-w-[100%] px-8 bg-neutral-100">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center space-x-4">
             <div className="flex shrink-0">
@@ -58,7 +77,6 @@ export default function Navbar() {
               <NavButton name="Home" />
               <NavButton name="About Us" />
               <NavButton name="Contact" />
-              <NavButton name="Support Us" />
               <BuyButton />
             </div>
           </div>
@@ -68,16 +86,16 @@ export default function Navbar() {
       {/*Mobile Menu */}
       <div
         className={
-          "md:hidden fixed flex-col w-[45%] h-[100%] z-99 cursor-pointer " +
+          "md:hidden fixed flex-col w-[45%] z-99 cursor-pointer font-bold font-[Gill_Sans] " +
           (click == 0
             ? ""
             : click == 1
               ? "animate-navbar-blur-close"
-              : "animate-navbar-blur-open")
+              : "animate-navbar-blur-open h-[100%]")
         }
       >
         {/*Mobile Burger Icon */}
-        <div className="p-4" onClick={handleClick}>
+        <div className="p-4 " onClick={handleClick}>
           <div className="w-14 h-14 rounded-full flex items-center justify-center bg-lime-50 ">
             <svg
               className={
@@ -130,7 +148,7 @@ export default function Navbar() {
           <NavButton name="Home" />
           <NavButton name="About Us" />
           <NavButton name="Contact" />
-          <NavButton name="Support Us" />
+          <NavButton name="Communities" />
           <BuyButton />
         </div>
       </div>
