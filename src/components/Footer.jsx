@@ -1,3 +1,4 @@
+import { Instagram } from "react-bootstrap-icons";
 export default function Footer() {
   return (
     <div
@@ -23,8 +24,12 @@ export default function Footer() {
           <div className="flex-col text-center px-4">
             <h1 className="font-bold text-md md:text-xl">Contact Us</h1>
             <ul className="md:text-base text-xs ">
-              <li className="pt-1">Email: sample@gmail.com</li>
-              <li className="pt-1">Phone: +91 8888888888</li>
+              <li className="pt-1">Email: srijan.enacnsut@gmail.com</li>
+              <li className="pt-1">
+                Phone: +91 8595622774 <br />
+                +91 9999358770 <br />
+                +91 9992184356
+              </li>
               <li className="pt-1">
                 Address: NSUT, Sector-3, Dwarka, NewDelhi{" "}
               </li>
@@ -32,7 +37,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="text-center text-md md:text-lg">
+      <a href="https://www.instagram.com/srijan.enactusnsut">
+        <Instagram className="md:size-6 mx-auto" />
+      </a>
+      <p className="text-center text-md md:text-lg pt-5">
         &copy; 2025 Srijan. All rights reserved.
       </p>
     </div>

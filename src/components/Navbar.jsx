@@ -5,9 +5,12 @@ function NavButton({ name }) {
   if (name != "Contact") {
     return (
       <Link to={name == "Home" ? "/" : "/" + name} viewTransition>
+        {/*Normal Screen */}
         <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
           {name}
         </div>
+
+        {/*Mobile Screen */}
         <div className="block cursor:pointer md:hidden w-[100%] py-4 px-6 flex-1 text-slate-700 hover:bg-[#749615] hover:text-slate-100 transition ease-in-out duration-300">
           {name}
         </div>
@@ -22,10 +25,13 @@ function NavButton({ name }) {
     };
     return (
       <div onClick={scrollToFooter}>
+        {/*Normal Screen */}
         <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
           {name}
         </div>
-        <div className="block cursor:pointer md:hidden w-[100%] py-4 px-6 flex-1 text-slate-700 hover:bg-[#749615] hover:text-slate-100 transition ease-in-out duration-300">
+
+        {/*Mobile Screen */}
+        <div className="block md:hidden w-[100%] py-4 px-6 flex-1 text-slate-700 hover:bg-[#749615] hover:text-slate-100 transition ease-in-out duration-300">
           {name}
         </div>
       </div>
@@ -34,14 +40,20 @@ function NavButton({ name }) {
 }
 function BuyButton() {
   return (
-    <Link to="/Shop" viewTransition>
+    <Link
+      to="https://forms.gle/pmTiXdVbyymPg55RA"
+      target="_blank"
+      viewTransition
+    >
+      {/*Normal Screen */}
       <div className="hidden cursor:pointer absolute md:block inset-y-2 right-0 flex items-center">
         <div className="rounded-md px-4 py-3 text-md text-gray bg-[#749615] hover:bg-[#5e7a10] text-white transition ease-in-out duration-300">
           Shop Now
         </div>
       </div>
 
-      <div className="relative cursor:pointer md:hidden w-[100%] py-4 px-6 bg-[#749615] hover:bg-[#5e7a10] transition ease-in-out duration-300 top-30">
+      {/*Mobile Screen */}
+      <div className="relative md:hidden w-[100%] py-4 px-6 bg-[#749615] hover:bg-[#5e7a10] transition ease-in-out duration-300 top-30">
         <div className="text-slate-100">Shop Now</div>
       </div>
     </Link>
@@ -56,13 +68,16 @@ export default function Navbar() {
       setClick(1);
     }
   }
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       setClick(0);
     });
   }, []);
+
   return (
     <nav>
+      {/*Normal Screens*/}
       <div className="font-bold font-[Gill_Sans] shadow-md z-11 relative hidden md:block mx-auto max-w-[100%] px-8 bg-neutral-100">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center space-x-4">
@@ -148,7 +163,6 @@ export default function Navbar() {
           <NavButton name="Home" />
           <NavButton name="About Us" />
           <NavButton name="Contact" />
-          <NavButton name="Communities" />
           <BuyButton />
         </div>
       </div>

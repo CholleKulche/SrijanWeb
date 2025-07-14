@@ -1,132 +1,108 @@
 import Footer from "./components/Footer";
 import { InstagramEmbed } from "react-social-media-embed";
-import { Instagram, Linkedin, BoxArrowInUpRight } from "react-bootstrap-icons";
+import {
+  Instagram,
+  Linkedin,
+  BoxArrowInUpRight,
+  Facebook,
+  Youtube,
+  Line,
+} from "react-bootstrap-icons";
+
+{
+  /* Leads */
+}
 const projectLeads = [
   {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
+    img: "src/assets/Images/KirtanGupta.png",
+    name: "Kirtan Gupta",
   },
   {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
-  },
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
+    img: "src/assets/Images/GarvMittal.png",
+    name: "Garv Mittal",
   },
 ];
 
-const RnD = [
+const deptLeads = [
   {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
+    img: "src/assets/Images/DishaKashyap.png",
+    name: "Disha Kashyap",
+    post: "Research and Development",
+  },
+  {
+    img: "src/assets/Images/VanshBhardwaj.png",
+    name: "Vansh Bhardwaj",
+    post: "Research and Development",
   },
   {
     img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
+    name: "Urvi Ghai",
+    post: "Research and Development / Media",
   },
   {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
+    img: "src/assets/Images/YashmitGupta.png",
+    name: "Yashmit Gupta",
+    post: "Media",
   },
   {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
+    img: "src/assets/Images/Vedansh.png",
+    name: "Vedansh",
+    post: "Media",
+  },
+  {
+    img: "src/assets/Images/MananBhateja.png",
+    name: "Manan Bhateja",
+    post: "Media",
+  },
+  {
+    img: "src/assets/Images/JyotinThakur.png",
+    name: "Jyotin Thakur",
+    post: "Tech",
+  },
+  {
+    img: "src/assets/Images/SuhaniGarg.png",
+    name: "Suhani Garg",
+    post: "Tech",
+  },
+  {
+    img: "src/assets/Images/Ritveek.png",
+    name: "Ritveek",
+    post: "Business Outreach",
+  },
+  {
+    img: "src/assets/Images/SatvikGupta.png",
+    name: "Satvik",
+    post: "Business Outreach",
   },
 ];
 
-const mediaTeam = [
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "",
-    instagram: "https://www.instagram.com/enac.nsut/",
-  },
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
-  },
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
-  },
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
-  },
-];
-const techTeam = [
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
-  },
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Your Name",
-    linkedin: "https://in.linkedin.com/company/enactus-nsut",
-    instagram: "https://www.instagram.com/enac.nsut/",
-  },
-];
-function Cards({ img, name, instagram, linkedin }) {
+function Cards({ img, name, post }) {
   return (
     <>
-      <div className="bg-transparent flex-col space-y-4 p-5 shadow-xl hover:shadow-4xl hover:bg-neutral-100 transition ease-in-out duration-300">
+      <div className="flex-1 bg-transparent flex-col space-y-4 p-5 shadow-xl hover:shadow-4xl hover:bg-neutral-50 transition ease-in-out duration-300">
         <img
           src={img}
           alt="Your Image"
           className="mx-auto h-auto w-[100%] object-cover"
         />
-        <h1 className="flex-1 text-stone-700 text-center text-base sm:text-lg card-2:text-2xl card-1:text-4xl font-semibold font-[Didot]">
+        <h1 className="flex-1 text-stone-700 text-center text-sm sm:text-base card-2:text-xl xl:text-3xl font-semibold font-[Didot]">
           {name}
-          <hr />
         </h1>
-        <div className="flex-1 flex space-x-2 justify-center ">
-          {instagram ? (
-            <a href="https://www.instagram.com/enac.nsut/" target="_blank">
-              <Instagram className="size-6 text-stone-700" />
-            </a>
-          ) : (
-            <></>
-          )}
-          {linkedin ? (
-            <a href={linkedin} target="_blank">
-              <Linkedin className="size-6 text-stone-700" />
-            </a>
-          ) : (
-            <></>
-          )}
-        </div>
+        <hr />
+        <h2 className="flex-1 text-stone-700 text-center text-xs sm:text-sm card-2:text-lg xl:text-xl font-semibold font-[Didot]">
+          {post}
+        </h2>
       </div>
     </>
   );
 }
+
 export default function AboutUs() {
   return (
     <>
+      {/*Project Leads */}
       <div className="bg-linear-to-tl from-green-200 from-[0%] via-emerald-100 via-[50%] to-teal-200 to-[100%]">
-        <div className="pb-4 p-10">
+        <div className="pb-8 p-10">
           <h1 className="text-3xl md:text-6xl text-slate-800 font-[Didot] text-center">
             Our Team
           </h1>
@@ -136,7 +112,7 @@ export default function AboutUs() {
           <h2 className="text-xl md:text-4xl font-[Gill_Sans] text-slate-700 font-bold text-center">
             Project Leads
           </h2>
-          <div className="flex flex-col sm:flex-row space-y-10 sm:space-y-0 sm:space-x-10 card-2:space-x-20 items-center justify-center align-center py-4 px-4 sm:px-0 sm:py-8">
+          <div className="flex flex-col sm:flex-row space-y-10 md:w-[85%] sm:space-y-0 sm:space-x-10 card-2:space-x-20 items-center justify-center align-center py-4 px-4 sm:px-0 sm:py-8 mx-auto">
             {projectLeads.map((leads) => (
               <Cards {...leads} key={leads.name} />
             ))}
@@ -146,49 +122,43 @@ export default function AboutUs() {
           <hr />
         </div>
       </div>
-      <div className="bg-linear-to-tl from-sky-200 via-blue-100  to-cyan-200 w-[100%] py-5 px-8 ">
-        <div className="flex items-center align-center sm:justify-between space-x-4 sm:space-x-8 card-2:space-x-14 pt-4 sm:pt-8">
-          <h2 className="flex-1 text-xl md:text-4xl font-[Gill_Sans] text-neutral-700  font-bold text-right sm:text-left">
-            Media Team
-          </h2>
-          <h2 className="flex-1 text-xl md:text-4xl font-[Gill_Sans] text-neutral-700 font-bold sm:text-right">
-            Research and Development
-          </h2>
-        </div>
-        <div className="flex space-x-4 sm:space-x-8 card-2:space-x-14 items-center justify-center align-center py-4 sm:py-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
-            {mediaTeam.map((leads) => (
-              <Cards {...leads} key={leads.name} />
-            ))}
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4">
-            {RnD.map((leads) => (
-              <Cards {...leads} key={leads.name} />
-            ))}
-          </div>
-        </div>
-        <hr />
-        <h2 className="text-xl sm:text-4xl font-[Gill_Sans] text-neutral-700  font-bold text-center pt-5">
-          Tech Team
+      {/*Dept Leads*/}
+      <div className="bg-linear-to-tl from-sky-200 via-blue-100  to-cyan-200 w-[100%] py-8 px-8 ">
+        <h2 className="text-xl md:text-4xl font-[Gill_Sans] text-neutral-700  font-bold text-center">
+          Department Leads
         </h2>
-        <div className="flex space-x-4 space-x-4 sm:space-x-8 card-2:space-x-14 items-center justify-center mx-auto align-center py-4 sm:py-8 sm:w-[50%]">
-          {techTeam.map((leads) => (
+        <div className="hidden sm:grid grid-cols-3 align-center pt-8 px-[1.25rem] gap-[1.25rem] md:px-[2rem] md:gap-[2rem]">
+          {deptLeads.slice(0, 9).map((leads) => (
+            <Cards {...leads} key={leads.name} />
+          ))}
+        </div>
+        <div className="hidden sm:block w-[calc(33%-1.5625rem)] md:w-[calc(33%-2.5rem)] mx-auto pt-8">
+          <Cards {...deptLeads[9]} />
+        </div>
+
+        {/* Mobile view for Dept Leads*/}
+        <div className="grid sm:hidden grid-cols-2 gap-4 pt-8">
+          {deptLeads.map((leads) => (
             <Cards {...leads} key={leads.name} />
           ))}
         </div>
       </div>
-      <div className="bg-stone-100 py-5 px-8">
-        <h1 className="text-3xl md:text-6xl text-black font-[Didot] text-center">
+
+      {/*Partnerships */}
+      <div className="bg-stone-100 py-8 px-8">
+        <h1 className="text-3xl md:text-6xl text-black font-[Didot] text-center pb-4">
           Partnerships
         </h1>
+
+        {/*Mitr */}
         <div className="flex flex-row w-[100%] justify-center items-center align-center space-x-8 group pt-5">
-          <div className="bg-white shadow-md flex-1 group-hover:rotate-[-3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
+          <div className="bg-white shadow-md flex-1 group-hover:rotate-[3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
-              src="src/assets/Images/VedanshBhaiya.png"
-              className="h-[100%] w-auto object-cover px-4 pt-4 pb-12"
+              src="src/assets/Images/MitrTrust.jpg"
+              className="h-[100%] w-auto object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
             />
           </div>
-          <div className="flex-2">
+          <div className="flex-1">
             <h2 className="font-[Didot] text-xl md:text-4xl pb-5">
               Mitr Foundation
             </h2>
@@ -205,8 +175,8 @@ export default function AboutUs() {
                 corporis.
               </p>
               <div className="flex space-x-2 pb-5">
-                <a href="instagram.com" target="_blank">
-                  <Instagram className="size-6 group-hover:scale-[1.2] transition ease-in-out duration-300" />
+                <a href="https://www.facebook.com/mitr2016/" target="_blank">
+                  <Facebook className="size-6 group-hover:scale-[1.2] transition ease-in-out duration-300" />
                 </a>
                 <a href="https://mitrfoundation.org/" target="_blank">
                   <BoxArrowInUpRight className="size-6 group-hover:scale-[1.2] transition ease-in-out duration-300" />
@@ -215,8 +185,10 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
+
+        {/*We Care */}
         <div className="flex flex-row w-[100%] justify-center items-center align-center space-x-8 group pt-5">
-          <div className="flex-2">
+          <div className="flex-1">
             <h2 className="font-[Didot] text-xl md:text-4xl pb-5">
               We Care Foundation
             </h2>
@@ -233,46 +205,45 @@ export default function AboutUs() {
                 corporis.
               </p>
               <div className="flex space-x-2 pb-5">
-                <a href="instagram.com" target="_blank">
-                  <Instagram className="size-6 group-hover:scale-[1.2] transition ease-in-out duration-300" />
+                <a
+                  href="https://www.facebook.com/Wecarefoundationforhumanity/"
+                  target="_blank"
+                >
+                  <Facebook className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/wecarefoundation4humanity/"
+                  target="_blank"
+                >
+                  <Linkedin className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                </a>
+                <a
+                  href="https://www.instagram.com/wecarefoundation_4humanity/"
+                  target="_blank"
+                >
+                  <Instagram className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=lrOkY9_ohDc"
+                  target="_blank"
+                >
+                  <Youtube className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
                 <a href="https://www.wecarefoundation.in/" target="_blank">
-                  <BoxArrowInUpRight className="size-6 group-hover:scale-[1.2] transition ease-in-out duration-300" />
+                  <BoxArrowInUpRight className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
               </div>
             </div>
           </div>
           <div className="bg-white shadow-md flex-1 group-hover:rotate-[-3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
-              src="src/assets/Images/VedanshBhaiya.png"
-              className="h-[100%] w-auto object-cover px-4 pt-4 pb-12"
+              src="src/assets/Images/WeCare.jpg"
+              className="h-[100%] w-auto object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
             />
           </div>
         </div>
       </div>
-      <div className="bg-gray-50">
-        <h1 className="text-3xl md:text-6xl text-black font-[Didot] text-center pt-10 pb-5">
-          Updates
-        </h1>
-        <div className="px-8 pb-5">
-          <hr />
-        </div>
-        <div className=" flex space-x-4 justify-evenly px-4 pb-10">
-          <InstagramEmbed url="https://www.instagram.com/p/CUbHfhpswxt/" />
-          <InstagramEmbed
-            url="https://www.instagram.com/p/CUbHfhpswxt/"
-            className="hidden md:block"
-          />
-          <InstagramEmbed
-            url="https://www.instagram.com/p/CUbHfhpswxt/"
-            className="hidden card-1:block"
-          />
-          <InstagramEmbed
-            url="https://www.instagram.com/p/CUbHfhpswxt/"
-            className="hidden card-1:block"
-          />
-        </div>
-      </div>
+
       <Footer />
     </>
   );

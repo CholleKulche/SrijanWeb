@@ -72,7 +72,8 @@ function Hero() {
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
           </p>
           <Link
-            to="/Shop"
+            to="https://forms.gle/pmTiXdVbyymPg55RA"
+            target="_blank"
             className="rounded-md bg-black px-4 py-2 md:px-6 md:py-4 text-md font-semibold text-white hover:bg-gray-700 transition ease-in-out duration-300 font-[Gill_Sans]"
             viewTransition
           >
@@ -111,9 +112,9 @@ function Cards({ img, product, content }) {
           {product}
         </h1>
         <p className="text-xs sm:text-sm font-[Gill_Sans]">{content}</p>
-        <a href="" className="text-sm sm:text-base">
-          Learn More
-        </a>
+        <p className="text-[10px] sm:text-xs font-[Gill_Sans] font-thin">
+          <sup>*</sup>Image does not represent actual product
+        </p>
       </div>
     </>
   );
@@ -142,7 +143,8 @@ export default function Home() {
     <>
       <Hero />
       <div className="flex-col w-[100%] pt-6">
-        <div className="pb-6">
+        <div className="pb-8">
+          {/*Product Lineup */}
           <div className="w-[100%] flex align-center justify-center py-6">
             <h1 className="font-bold text-lg md:text-2xl text-white bg-lime-700 rounded-full px-4 py-2 md:px-6 md:py-2 font-[Gill_Sans] shadow-lg">
               Discover our range of products
@@ -154,14 +156,15 @@ export default function Home() {
             ))}
           </div>
           {/* For Smaller Screens */}
-
-          <div className="md:hidden grid grid-cols-2 gap-4">
+          <div className="md:hidden grid grid-cols-2 gap-4 px-4">
             {cardList.map((card) => (
               <Cards {...card} key={card.product} />
             ))}
           </div>
         </div>
-        <div className="w-[100%] relative py-6 px-8 flex space-x-4 bg-linear-to-br from-green-200 from-[0%] via-emerald-100 via-[50%] to-teal-200 to-[100%] text-slate-600 shadow-lg z-1 font-[Gill_Sans] font-bold">
+
+        {/*Our Impact */}
+        <div className="w-[100%] relative py-8 px-8 flex space-x-4 bg-linear-to-br from-green-200 from-[0%] via-emerald-100 via-[50%] to-teal-200 to-[100%] text-slate-600 shadow-lg z-1 font-[Gill_Sans] font-bold">
           <div className="hidden sm:flex flex-col flex-1">
             <h1 className="text-3xl md:text-5xl font-[Georgia] text-slate-700 font-semibold">
               We at <div className="text-lime-600">Project Srijan</div> believe
@@ -218,7 +221,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="py-6 bg-white">
+
+        {/*Working*/}
+        <div className="py-8 bg-white">
           <div className=" flex-col align-center justify-center py-4 rounded-sm text-center">
             <h1 className="font-bold text-xl sm:text-4xl pb-2 font-[Georgia]">
               How It Works
@@ -230,19 +235,19 @@ export default function Home() {
               From paper to plant in four simple steps
             </p>
           </div>
-
           <div className="hidden md:flex space-x-[60px] justify-center mx-[60px] pt-5">
             {iconList.map((icon) => (
               <Icon {...icon} key={icon.title} />
             ))}
           </div>
-
+          {/*For Smaller Screens*/}
           <div className="md:hidden grid grid-cols-2 gap-4">
             {iconList.map((icon) => (
               <Icon {...icon} key={icon.title} />
             ))}
           </div>
         </div>
+
         <Footer />
       </div>
     </>
