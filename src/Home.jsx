@@ -40,7 +40,7 @@ function Hero() {
         </div>
         <div className="hidden md:block flex-1 relative justify-center align-center py-7">
           <img
-            src="src/assets/Images/Main image calendar.png"
+            src="/assets/Images/Main image calendar.png"
             className="rounded-full"
           />
         </div>

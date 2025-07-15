@@ -90,7 +90,7 @@ export default function AboutUs() {
         <div className="flex flex-row w-[100%] justify-center items-center align-center space-x-8 group pt-5">
           <div className="bg-white shadow-md flex-1 group-hover:rotate-[3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
-              src="src/assets/Images/MitrTrust.jpg"
+              src="/assets/Images/MitrTrust.jpg"
               className="h-[100%] w-auto object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
             />
           </div>
@@ -112,7 +112,7 @@ export default function AboutUs() {
               </p>
               <div className="flex space-x-2 pb-5">
                 <a href="https://www.facebook.com/mitr.trust/" target="_blank">
-                  <Facebook className="size-4 md:size-6  group-hover:scale-[1.2] transition ease-in-out duration-300" />
+                  <Facebook className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
                 <a href="https://www.instagram.com/mitrtrust/" target="_blank">
                   <Instagram className="size-4 md:size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
@@ -121,7 +121,7 @@ export default function AboutUs() {
                   <TwitterX className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
                 <a href="https://mitrtrust.org/" target="_blank">
-                  <BoxArrowInUpRight className="size-4 md:size-6  group-hover:scale-[1.2] transition ease-in-out duration-300" />
+                  <BoxArrowInUpRight className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function AboutUs() {
           </div>
           <div className="bg-white shadow-md flex-1 group-hover:rotate-[-3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
-              src="src/assets/Images/WeCare.jpg"
+              src="/assets/Images/WeCare.jpg"
               className="h-[100%] w-auto object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
             />
           </div>

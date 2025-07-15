@@ -1,21 +1,21 @@
 export const steps = [
   {
-    img: "/assets/Images/assets/Images/Paper Creation.png",
+    img: "/assets/Images/Paper Creation.png",
     title: "Paper Creation",
     content: "Recycled materials are processed into paper pulp",
   },
   {
-    img: "/assets/Images/assets/Images/Seed Embedding.png",
+    img: "/assets/Images/Seed Embedding.png",
     title: "Seed Embedding",
     content: "High-quality seeds are carefully embedded",
   },
   {
-    img: "/assets/Images/assets/Images/Usage.png",
+    img: "/assets/Images/Usage.png",
     title: "Usage",
     content: "Use the product as intended",
   },
   {
-    img: "/assets/Images/assets/Images/Planting.png",
+    img: "/assets/Images/Planting.png",
     title: "Planting",
     content: "Plant and watch it grow into beautiful plants",
   },
