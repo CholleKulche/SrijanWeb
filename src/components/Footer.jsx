@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <a href="https://www.instagram.com/srijan.enactusnsut">
+      <a href="https://www.instagram.com/srijan.enactusnsut" target="_blank">
         <Instagram className="md:size-6 mx-auto" />
       </a>
       <p className="text-center text-md md:text-lg pt-5">
