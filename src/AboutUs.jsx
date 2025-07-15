@@ -91,7 +91,7 @@ export default function AboutUs() {
           <div className="bg-white shadow-md flex-1 group-hover:rotate-[3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
               src="/assets/Images/MitrTrust.jpg"
-              className="h-[100%] w-auto object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
+              className="h-auto w-[100%] object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
             />
           </div>
           <div className="flex-1">
@@ -179,7 +179,7 @@ export default function AboutUs() {
           <div className="bg-white shadow-md flex-1 group-hover:rotate-[-3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
               src="/assets/Images/WeCare.jpg"
-              className="h-[100%] w-auto object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
+              className="h-auto w-[100%] object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
             />
           </div>
         </div>
