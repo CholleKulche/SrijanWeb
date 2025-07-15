@@ -1,61 +1,61 @@
 export const projectLeads = [
   {
-    img: "/assets/Images/assets/Images/KirtanGupta.png",
+    img: "/assets/Images/KirtanGupta.png",
     name: "Kirtan Gupta",
   },
   {
-    img: "/assets/Images/assets/Images/GarvMittal.png",
+    img: "/assets/Images/GarvMittal.png",
     name: "Garv Mittal",
   },
 ];
 export const deptLeads = [
   {
-    img: "/assets/Images/assets/Images/DishaKashyap.png",
+    img: "/assets/Images/DishaKashyap.png",
     name: "Disha Kashyap",
     post: "Research and Development",
   },
   {
-    img: "/assets/Images/assets/Images/VanshBhardwaj.png",
+    img: "/assets/Images/VanshBhardwaj.png",
     name: "Vansh Bhardwaj",
     post: "Research and Development",
   },
   {
-    img: "/assets/Images/assets/Images/VedanshBhaiya.png",
+    img: "/assets/Images/VedanshBhaiya.png",
     name: "Urvi Ghai",
     post: "Research and Development / Media",
   },
   {
-    img: "/assets/Images/assets/Images/YashmitGupta.png",
+    img: "/assets/Images/YashmitGupta.png",
     name: "Yashmit Gupta",
     post: "Media",
   },
   {
-    img: "/assets/Images/assets/Images/Vedansh.png",
+    img: "/assets/Images/Vedansh.png",
     name: "Vedansh",
     post: "Media",
   },
   {
-    img: "/assets/Images/assets/Images/MananBhateja.png",
+    img: "/assets/Images/MananBhateja.png",
     name: "Manan Bhateja",
     post: "Media",
   },
   {
-    img: "/assets/Images/assets/Images/JyotinThakur.png",
+    img: "/assets/Images/JyotinThakur.png",
     name: "Jyotin Thakur",
     post: "Tech",
   },
   {
-    img: "/assets/Images/assets/Images/SuhaniGarg.png",
+    img: "/assets/Images/SuhaniGarg.png",
     name: "Suhani Garg",
     post: "Tech",
   },
   {
-    img: "/assets/Images/assets/Images/Ritveek.png",
+    img: "/assets/Images/Ritveek.png",
     name: "Ritveek",
     post: "Business Outreach",
   },
   {
-    img: "/assets/Images/assets/Images/SatvikGupta.png",
+    img: "/assets/Images/SatvikGupta.png",
     name: "Satvik",
     post: "Business Outreach",
   },
