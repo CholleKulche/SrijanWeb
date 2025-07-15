@@ -1,50 +1,6 @@
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
-const cardList = [
-  {
-    img: "src/assets/Images/Corporate Gift Sets.png",
-    product: "Corporate Gift Sets",
-    content: "Track time while planning for a greener future",
-  },
-  {
-    img: "src/assets/Images/Ecofriendly Calanders.png",
-    product: "Ecofriendly Calenders",
-    content: "Sustainable gifting solutions for businesses",
-  },
-  {
-    img: "src/assets/Images/PlantableJournal.png",
-    product: "Plantable Journals",
-    content: "Write memoirs that blossom into flowers",
-  },
-  {
-    img: "src/assets/Images/Seed Paper Business Cards.png",
-    product: "Seed Paper Business Cards",
-    content: "Make a lasting impression with cards that grow into plants",
-  },
-];
-
-const iconList = [
-  {
-    img: "src/assets/Images/Paper Creation.png",
-    title: "Paper Creation",
-    content: "Recycled materials are processed into paper pulp",
-  },
-  {
-    img: "src/assets/Images/Seed Embedding.png",
-    title: "Seed Embedding",
-    content: "High-quality seeds are carefully embedded",
-  },
-  {
-    img: "src/assets/Images/Usage.png",
-    title: "Usage",
-    content: "Use the product as intended",
-  },
-  {
-    img: "src/assets/Images/Planting.png",
-    title: "Planting",
-    content: "Plant and watch it grow into beautiful plants",
-  },
-];
+import { steps, products } from "./data/home.js";
 
 function Hero() {
   return (
@@ -68,8 +24,10 @@ function Hero() {
             <div className="text-[#a3d615]">Grow Your Future</div>
           </h1>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8 pb-10 font-[Gill_Sans]">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+            We at Srijan believe in transforming discarded paper into
+            opportunities for a new life. By choosing Srijan, your business
+            takes a meaningful step forward in advancing towards sustainability
+            and environmental responsibility.
           </p>
           <Link
             to="https://forms.gle/pmTiXdVbyymPg55RA"
@@ -151,13 +109,13 @@ export default function Home() {
             </h1>
           </div>
           <div className="hidden md:flex space-x-5 mx-5">
-            {cardList.map((card) => (
+            {products.map((card) => (
               <Cards {...card} key={card.product} />
             ))}
           </div>
           {/* For Smaller Screens */}
           <div className="md:hidden grid grid-cols-2 gap-4 px-4">
-            {cardList.map((card) => (
+            {products.map((card) => (
               <Cards {...card} key={card.product} />
             ))}
           </div>
@@ -171,10 +129,11 @@ export default function Home() {
               in creating environmental impact one paper at a time
             </h1>
             <p className="pt-4 text-xs md:text-base font-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              impedit expedita, itaque nobis doloremque rerum tempora esse
-              aliquid magni ratione numquam. Pariatur a est mollitia nostrum.
-              Nihil facere earum dolore.
+              Each of our products is thoughtfully crafted from recycled paper,
+              and embedded with seeds—reflecting our commitment to a greener
+              future. By crafting over 10,000 sheets of seed paper from recycled
+              materials, we've helped save trees, conserve water and energy, and
+              keep waste out of landfills
             </p>
           </div>
           <div className="flex-col flex-1">
@@ -184,38 +143,43 @@ export default function Home() {
             <div className="pt-4 grid grid-cols-2 gap-2 sm:gap-4">
               <div className="flex-col">
                 <h1 className="text-xl sm:text-3xl md:text-5xl font-light font-[Didot] text-emerald-700">
-                  100+
+                  25,000
                 </h1>
                 <p className="text-xs md:text-base font-normal">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium ipsam illo aliquid molestiae qui,
+                  Liters of Water saved. Seed paper flips the script, conserving
+                  a remarkable amount of water with every batch.
                 </p>
               </div>
               <div className="flex-col">
                 <h1 className="text-xl sm:text-3xl md:text-5xl md:text-5xl font-light font-[Didot] text-emerald-700 ">
-                  5000+{" "}
+                  4 Tons
                 </h1>
                 <p className="text-xs md:text-base font-normal">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Of CO<sub>2</sub> —Stopped in Its Tracks.Seed paper rewrites
+                  the story, blocking 4 tonnes of CO₂ from entering our
+                  skies—the equivalent of taking a car off the road for an
+                  entire year.{" "}
                 </p>
               </div>
               <div className="flex-col">
                 <h1 className="text-xl sm:text-3xl md:text-5xl font-light font-[Didot] text-emerald-700">
-                  1000+{" "}
+                  3m<sup>3</sup>
                 </h1>
                 <p className="text-xs md:text-base font-normal">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium ipsam illo aliquid
+                  Of waste transformed. Most paper ends its story buried in
+                  landfills. Seed paper breaks that cycle by blossoming into
+                  wildflowers, and giving back to the earth.
                 </p>
               </div>
               <div className="flex-col">
                 <h1 className="text-xl sm:text-3xl md:text-5xl font-light font-[Didot] text-emerald-700">
-                  500+{" "}
+                  25
                 </h1>
                 <p className="text-xs md:text-base font-normal">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium ipsam illo aliquid molestiae qui, officia illum
-                  eius nulla sapiente.
+                  Eucalyptus Giants Standing Tall. Every sheet becomes a silent
+                  promise to protect trees that have taken decades to grow,
+                  letting nature&apos;s giants continue their vital work for
+                  generations to come.
                 </p>
               </div>
             </div>
@@ -236,13 +200,13 @@ export default function Home() {
             </p>
           </div>
           <div className="hidden md:flex space-x-[60px] justify-center mx-[60px] pt-5">
-            {iconList.map((icon) => (
+            {steps.map((icon) => (
               <Icon {...icon} key={icon.title} />
             ))}
           </div>
           {/*For Smaller Screens*/}
           <div className="md:hidden grid grid-cols-2 gap-4">
-            {iconList.map((icon) => (
+            {steps.map((icon) => (
               <Icon {...icon} key={icon.title} />
             ))}
           </div>

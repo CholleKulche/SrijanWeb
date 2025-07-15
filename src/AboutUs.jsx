@@ -6,75 +6,9 @@ import {
   BoxArrowInUpRight,
   Facebook,
   Youtube,
-  Line,
+  TwitterX,
 } from "react-bootstrap-icons";
-
-{
-  /* Leads */
-}
-const projectLeads = [
-  {
-    img: "src/assets/Images/KirtanGupta.png",
-    name: "Kirtan Gupta",
-  },
-  {
-    img: "src/assets/Images/GarvMittal.png",
-    name: "Garv Mittal",
-  },
-];
-
-const deptLeads = [
-  {
-    img: "src/assets/Images/DishaKashyap.png",
-    name: "Disha Kashyap",
-    post: "Research and Development",
-  },
-  {
-    img: "src/assets/Images/VanshBhardwaj.png",
-    name: "Vansh Bhardwaj",
-    post: "Research and Development",
-  },
-  {
-    img: "src/assets/Images/VedanshBhaiya.png",
-    name: "Urvi Ghai",
-    post: "Research and Development / Media",
-  },
-  {
-    img: "src/assets/Images/YashmitGupta.png",
-    name: "Yashmit Gupta",
-    post: "Media",
-  },
-  {
-    img: "src/assets/Images/Vedansh.png",
-    name: "Vedansh",
-    post: "Media",
-  },
-  {
-    img: "src/assets/Images/MananBhateja.png",
-    name: "Manan Bhateja",
-    post: "Media",
-  },
-  {
-    img: "src/assets/Images/JyotinThakur.png",
-    name: "Jyotin Thakur",
-    post: "Tech",
-  },
-  {
-    img: "src/assets/Images/SuhaniGarg.png",
-    name: "Suhani Garg",
-    post: "Tech",
-  },
-  {
-    img: "src/assets/Images/Ritveek.png",
-    name: "Ritveek",
-    post: "Business Outreach",
-  },
-  {
-    img: "src/assets/Images/SatvikGupta.png",
-    name: "Satvik",
-    post: "Business Outreach",
-  },
-];
+import { projectLeads, deptLeads } from "./data/about.js";
 
 function Cards({ img, name, post }) {
   return (
@@ -146,10 +80,12 @@ export default function AboutUs() {
 
       {/*Partnerships */}
       <div className="bg-stone-100 py-8 px-8">
-        <h1 className="text-3xl md:text-6xl text-black font-[Didot] text-center pb-4">
-          Partnerships
+        <h1 className="text-3xl md:text-6xl text-black font-[Didot] text-center">
+          Communities
         </h1>
-
+        <p className="text-slate-900 text-xs sm:text-base pt-4 font-[Georgia] text-center pb-4">
+          Communities we have organised workshops and collaborate with
+        </p>
         {/*Mitr */}
         <div className="flex flex-row w-[100%] justify-center items-center align-center space-x-8 group pt-5">
           <div className="bg-white shadow-md flex-1 group-hover:rotate-[3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
@@ -160,26 +96,32 @@ export default function AboutUs() {
           </div>
           <div className="flex-1">
             <h2 className="font-[Didot] text-xl md:text-4xl pb-5">
-              Mitr Foundation
+              Mitr Trust
             </h2>
             <div>
               <hr />
-              <p className="font-[Gill_Sans] py-5">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-                adipisci ex excepturi. Magni fugiat excepturi odit minima
-                reprehenderit soluta nostrum odio animi earum, dolorum quaerat
-                officia quam suscipit, vel non! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Similique aperiam quae iste
-                beatae. Adipisci ad odio neque necessitatibus consequuntur enim
-                qui dolorem deserunt ab, aliquam error omnis ducimus est
-                corporis.
+              <p className="font-[Gill_Sans] py-5 text-xs md:text-base">
+                Mitr TRUST, established in January 2005 under the Indian Trust
+                Act of 1860, is Delhi&apos;s pioneering LGBTQIA+ community-based
+                organization. With a strong commitment to equity, dignity, and
+                respect, Mitr TRUST works to empower individuals across the
+                LGBTQIA+ spectrum, regardless of class, caste, creed, or race.
+                Since 2008, the organization has been actively involved in
+                HIV/AIDS awareness, prevention, and care initiatives, reaching
+                over 2,500 community members.
               </p>
               <div className="flex space-x-2 pb-5">
-                <a href="https://www.facebook.com/mitr2016/" target="_blank">
-                  <Facebook className="size-6 group-hover:scale-[1.2] transition ease-in-out duration-300" />
+                <a href="https://www.facebook.com/mitr.trust/" target="_blank">
+                  <Facebook className="size-4 md:size-6  group-hover:scale-[1.2] transition ease-in-out duration-300" />
                 </a>
-                <a href="https://mitrfoundation.org/" target="_blank">
-                  <BoxArrowInUpRight className="size-6 group-hover:scale-[1.2] transition ease-in-out duration-300" />
+                <a href="https://www.instagram.com/mitrtrust/" target="_blank">
+                  <Instagram className="size-4 md:size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                </a>
+                <a href="https://x.com/mitrtrust" target="_blank">
+                  <TwitterX className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                </a>
+                <a href="https://mitrtrust.org/" target="_blank">
+                  <BoxArrowInUpRight className="size-4 md:size-6  group-hover:scale-[1.2] transition ease-in-out duration-300" />
                 </a>
               </div>
             </div>
@@ -194,43 +136,42 @@ export default function AboutUs() {
             </h2>
             <div>
               <hr />
-              <p className="font-[Gill_Sans] py-5">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-                adipisci ex excepturi. Magni fugiat excepturi odit minima
-                reprehenderit soluta nostrum odio animi earum, dolorum quaerat
-                officia quam suscipit, vel non! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Similique aperiam quae iste
-                beatae. Adipisci ad odio neque necessitatibus consequuntur enim
-                qui dolorem deserunt ab, aliquam error omnis ducimus est
-                corporis.
+              <p className="font-[Gill_Sans] py-5 text-xs md:text-base">
+                We Care Foundation is committed to providing every child with
+                access to quality education and nutritious meals, recognizing
+                education as a fundamental human right and a cornerstone of
+                personal and societal development. The foundation believes that
+                education empowers individuals to transform their lives,
+                equipping them with the knowledge and skills needed to improve
+                their circumstances.
               </p>
               <div className="flex space-x-2 pb-5">
                 <a
                   href="https://www.facebook.com/Wecarefoundationforhumanity/"
                   target="_blank"
                 >
-                  <Facebook className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                  <Facebook className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/wecarefoundation4humanity/"
                   target="_blank"
                 >
-                  <Linkedin className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                  <Linkedin className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
                 <a
                   href="https://www.instagram.com/wecarefoundation_4humanity/"
                   target="_blank"
                 >
-                  <Instagram className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                  <Instagram className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
                 <a
                   href="https://www.youtube.com/watch?v=lrOkY9_ohDc"
                   target="_blank"
                 >
-                  <Youtube className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                  <Youtube className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
                 <a href="https://www.wecarefoundation.in/" target="_blank">
-                  <BoxArrowInUpRight className="size-6 group-hover:scale-[1.1] transition ease-in-out duration-300" />
+                  <BoxArrowInUpRight className="size-4 md:size-6  group-hover:scale-[1.1] transition ease-in-out duration-300" />
                 </a>
               </div>
             </div>

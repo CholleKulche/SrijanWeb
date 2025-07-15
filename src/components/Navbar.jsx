@@ -83,8 +83,8 @@ export default function Navbar() {
           <div className="flex flex-1 items-center space-x-4">
             <div className="flex shrink-0">
               <img
-                className="h-8 w-auto"
-                src="src/assets/react.svg"
+                className="h-10 rounded-full w-auto"
+                src="/assets/SrijanLogo.svg"
                 alt="Your Company"
               />
             </div>
