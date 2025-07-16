@@ -1,4 +1,4 @@
-import { Instagram } from "react-bootstrap-icons";
+import { Instagram, Linkedin } from "react-bootstrap-icons";
 export default function Footer() {
   return (
     <div
@@ -37,10 +37,15 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <a href="https://www.instagram.com/srijan.enactusnsut" target="_blank">
-        <Instagram className="md:size-6 mx-auto" />
-      </a>
-      <p className="text-center text-md md:text-lg pt-5">
+      <div className="flex space-x-2 justify-center">
+        <a href="https://www.instagram.com/srijan.enactusnsut" target="_blank">
+          <Instagram className="md:size-6" />
+        </a>
+        <a href="https://www.linkedin.com/company/srijan-nsut" target="_blank">
+          <Linkedin className="md:size-6" />
+        </a>
+      </div>
+      <p className="text-center text-md md:text-lg ">
         &copy; 2025 Srijan. All rights reserved.
       </p>
     </div>
