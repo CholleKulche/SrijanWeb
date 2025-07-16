@@ -20,7 +20,7 @@ export const deptLeads = [
     post: "Research and Development",
   },
   {
-    img: "/assets/Images/VedanshBhaiya.png",
+    img: "/assets/Images/UrviGhai.png",
     name: "Urvi Ghai",
     post: "Research and Development / Media",
   },

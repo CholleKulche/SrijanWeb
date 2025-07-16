@@ -84,7 +84,8 @@ export default function AboutUs() {
           Communities
         </h1>
         <p className="text-slate-900 text-xs sm:text-base pt-4 font-[Georgia] text-center pb-4">
-          Communities we have organised workshops and collaborate with
+          Communities we have organised workshops and continue to collaborate
+          with
         </p>
         {/*Mitr */}
         <div className="flex flex-row w-[100%] justify-center items-center align-center space-x-8 group pt-5">
