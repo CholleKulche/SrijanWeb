@@ -89,7 +89,7 @@ export default function AboutUs() {
         </p>
         {/*Mitr */}
         <div className="flex flex-row w-[100%] justify-center items-center align-center space-x-8 group pt-5">
-          <div className="bg-white shadow-md flex-1 group-hover:rotate-[3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
+          <div className="hidden sm:block bg-white shadow-md flex-1 group-hover:rotate-[3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
               src="/assets/Images/MitrTrust.jpg"
               className="h-auto w-[100%] object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
@@ -177,7 +177,7 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-          <div className="bg-white shadow-md flex-1 group-hover:rotate-[-3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
+          <div className="hidden sm:block bg-white shadow-md flex-1 group-hover:rotate-[-3deg] group-hover:scale-[1.05] transition ease-in-out duration-300">
             <img
               src="/assets/Images/WeCare.jpg"
               className="h-auto w-[100%] object-cover px-2 pt-2 pb-6 sm:px-4 sm:pt-4 sm:pb-12"
