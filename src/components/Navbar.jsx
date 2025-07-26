@@ -6,7 +6,7 @@ function NavButton({ name }) {
     return (
       <Link to={name == "Home" ? "/" : "/" + name} viewTransition>
         {/*Normal Screen */}
-        <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
+        <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
           {name}
         </div>
 
@@ -26,7 +26,7 @@ function NavButton({ name }) {
     return (
       <div onClick={scrollToFooter}>
         {/*Normal Screen */}
-        <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-sm text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
+        <div className="hidden cursor:pointer md:block rounded-md px-3 py-2 text-gray-600 hover:bg-[#749615] hover:text-white transition ease-in-out duration-300">
           {name}
         </div>
 
@@ -78,7 +78,7 @@ export default function Navbar() {
   return (
     <nav>
       {/*Normal Screens*/}
-      <div className="font-bold font-[Gill_Sans] shadow-md z-11 relative hidden md:block mx-auto max-w-[100%] px-8 bg-neutral-100">
+      <div className="font-bold font-[Alegreya_Sans] shadow-md z-11 relative hidden md:block mx-auto max-w-[100%] px-8 bg-neutral-100">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center space-x-4">
             <div className="flex shrink-0">
@@ -101,7 +101,7 @@ export default function Navbar() {
       {/*Mobile Menu */}
       <div
         className={
-          "md:hidden fixed flex-col w-[45%] z-99 cursor-pointer font-bold font-[Gill_Sans] " +
+          "md:hidden fixed flex-col w-[45%] z-99 cursor-pointer font-bold font-[Alegreya_Sans] " +
           (click == 0
             ? ""
             : click == 1

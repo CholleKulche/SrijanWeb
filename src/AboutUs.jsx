@@ -43,7 +43,7 @@ export default function AboutUs() {
           <hr />
         </div>
         <div className="py-2 sm:py-5 px-10">
-          <h2 className="text-xl md:text-4xl font-[Gill_Sans] text-slate-700 font-bold text-center">
+          <h2 className="text-xl md:text-4xl font-[Alegreya_Sans] text-slate-700 font-extrabold text-center">
             Project Leads
           </h2>
           <div className="flex flex-col sm:flex-row space-y-10 md:w-[85%] sm:space-y-0 sm:space-x-10 card-2:space-x-20 items-center justify-center align-center py-4 px-4 sm:px-0 sm:py-8 mx-auto">
@@ -58,7 +58,7 @@ export default function AboutUs() {
       </div>
       {/*Dept Leads*/}
       <div className="bg-linear-to-tl from-sky-200 via-blue-100  to-cyan-200 w-[100%] py-8 px-8 ">
-        <h2 className="text-xl md:text-4xl font-[Gill_Sans] text-neutral-700  font-bold text-center">
+        <h2 className="text-xl md:text-4xl font-[Alegreya_Sans] text-neutral-700 font-extrabold text-center">
           Department Leads
         </h2>
         <div className="hidden sm:grid grid-cols-3 align-center pt-8 px-[1.25rem] gap-[1.25rem] md:px-[2rem] md:gap-[2rem]">
@@ -101,7 +101,7 @@ export default function AboutUs() {
             </h2>
             <div>
               <hr />
-              <p className="font-[Gill_Sans] py-5 text-xs md:text-base">
+              <p className="font-[Alegreya_Sans] py-5 text-xs md:text-base">
                 Mitr TRUST, established in January 2005 under the Indian Trust
                 Act of 1860, is Delhi&apos;s pioneering LGBTQIA+ community-based
                 organization. With a strong commitment to equity, dignity, and
@@ -137,7 +137,7 @@ export default function AboutUs() {
             </h2>
             <div>
               <hr />
-              <p className="font-[Gill_Sans] py-5 text-xs md:text-base">
+              <p className="font-[Alegreya_Sans] py-5 text-xs md:text-base">
                 We Care Foundation is committed to providing every child with
                 access to quality education and nutritious meals, recognizing
                 education as a fundamental human right and a cornerstone of

@@ -23,7 +23,7 @@ function Hero() {
             Plant Your Business,{" "}
             <div className="text-[#a3d615]">Grow Your Future</div>
           </h1>
-          <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8 pb-10 font-[Gill_Sans]">
+          <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8 pb-10 font-[Alegreya_Sans]">
             We at Srijan believe in transforming discarded paper into
             opportunities for a new life. By choosing Srijan, your business
             takes a meaningful step forward in advancing towards sustainability
@@ -32,7 +32,7 @@ function Hero() {
           <Link
             to="https://forms.gle/pmTiXdVbyymPg55RA"
             target="_blank"
-            className="rounded-md bg-black px-4 py-2 md:px-6 md:py-4 text-md font-semibold text-white hover:bg-gray-700 transition ease-in-out duration-300 font-[Gill_Sans]"
+            className="rounded-md bg-black px-4 py-2 md:px-6 md:py-4 text-md font-semibold text-white hover:bg-gray-700 transition ease-in-out duration-300 font-[Alegreya_Sans]"
             viewTransition
           >
             Shop Sustainable
@@ -69,8 +69,8 @@ function Cards({ img, product, content }) {
         <h1 className="text-base sm:text-lg font-semibold font-[Didot]">
           {product}
         </h1>
-        <p className="text-xs sm:text-sm font-[Gill_Sans]">{content}</p>
-        <p className="text-[10px] sm:text-xs font-[Gill_Sans] font-thin">
+        <p className="text-xs sm:text-sm font-[Alegreya_Sans]">{content}</p>
+        <p className="text-[10px] sm:text-xs font-[Alegreya_Sans] font-thin">
           <sup>*</sup>Image does not represent actual product
         </p>
       </div>
@@ -85,10 +85,10 @@ function Icon({ img, title, content }) {
         <div className="w-12 h-12 sm:w-20 sm:h-20 rounded-full flex items-center justify-center bg-lime-300 mx-auto">
           <img src={img} className="h-8 sm:h-12 contain" />
         </div>
-        <h1 className="font-bold text-sm sm:text-lg text-center font-[Gill_Sans]">
+        <h1 className="font-bold text-sm sm:text-lg text-center font-[Alegreya_Sans]">
           {title}
         </h1>
-        <p className="text-center text-xs sm:text-base font-[Gill_Sans]">
+        <p className="text-center text-xs sm:text-base font-[Alegreya_Sans]">
           {content}
         </p>
       </div>
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="pb-8">
           {/*Product Lineup */}
           <div className="w-[100%] flex align-center justify-center py-6">
-            <h1 className="font-bold text-lg md:text-2xl text-white bg-lime-700 rounded-full px-4 py-2 md:px-6 md:py-2 font-[Gill_Sans] shadow-lg">
+            <h1 className="font-bold text-lg md:text-2xl text-white bg-lime-700 rounded-full px-4 py-2 md:px-6 md:py-2 font-[Alegreya_Sans] shadow-lg">
               Discover our range of products
             </h1>
           </div>
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
 
         {/*Our Impact */}
-        <div className="w-[100%] relative py-8 px-8 flex space-x-4 bg-linear-to-br from-green-200 from-[0%] via-emerald-100 via-[50%] to-teal-200 to-[100%] text-slate-600 shadow-lg z-1 font-[Gill_Sans] font-bold">
+        <div className="w-[100%] relative py-8 px-8 flex space-x-4 bg-linear-to-br from-green-200 from-[0%] via-emerald-100 via-[50%] to-teal-200 to-[100%] text-slate-600 shadow-lg z-1 font-[Alegreya_Sans] font-bold">
           <div className="hidden sm:flex flex-col flex-1">
             <h1 className="text-3xl md:text-5xl font-[Georgia] text-slate-700 font-semibold">
               We at <div className="text-lime-600">Project Srijan</div> believe
